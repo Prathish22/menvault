@@ -5,6 +5,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index),
-    
+    path('products_list',views.list_product,name='list_product')
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
