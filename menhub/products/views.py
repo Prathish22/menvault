@@ -13,7 +13,7 @@ def list_product(request):
     Returns:
         _type_: _description_
     """
-    return render(request,"product_list.html")
+    return render(request,"products.html")
 
-def list_product(request):
+def detail_product(request):
     return render(request,"product_detail.html")
