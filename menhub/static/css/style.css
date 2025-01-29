@@ -75,7 +75,7 @@ p{
     background: radial-gradient(#fff,#ffd6d6);
 }
 .header .row{
-    margin-top: 70px;
+    margin-top: 35px;
 }
 .categories{
     margin: 70px 0;
@@ -382,7 +382,7 @@ th:last-child{
 
 /* Account page */
 .account-page{
-    padding: 50px 0;
+    /* padding: 50px 0; */
     background: radial-gradient(#fff, #ffd6d6);
 }
 .form-container{
@@ -395,7 +395,27 @@ th:last-child{
     margin: auto;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    border-radius: 10px;
 }
+
+.error{
+    color: red;
+}
+
+.success{
+    color: green;
+}
+
+.message_popup{
+    background-color: #ffffff;
+    width: 299px;
+    height: 31px;
+    text-align: center;
+    margin-left: 151px;
+    padding: 5px;
+    font-size: 12px;
+}
+
 .form-container span{
     font-weight: bold;
     padding: 0 10px;
@@ -411,7 +431,7 @@ th:last-child{
     max-width: 300px;
     padding: 0 20px;
     position: absolute;
-    top: 130px;
+    top: 75px;
     transition: transform 1s;
 }
 form input{
