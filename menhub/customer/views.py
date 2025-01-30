@@ -2,7 +2,7 @@ from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
 from . models import Customer
 from django.contrib import messages
-from django.contrib.auth import authenticate,login
+from django.contrib.auth import authenticate,login,logout
 
 # Create your views here.
 def show_account(request):
@@ -49,5 +49,10 @@ def show_account(request):
                 messages.error(request,'Invalid user login')        
 
     return render(request,'account.html', context)
+
+
+def signout(request):
+    logout(request)
+    return redirect ('home')
 
 
