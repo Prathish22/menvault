@@ -5,22 +5,6 @@
         <div class="col-2">
             <img src="{{ product.image.url }}" width="100%" id="ProductImg">
 
-            
-            {% comment %} <div class="small-img-row">     
-                <div class="small-img-col">
-                    <img src="{% static 'images/gallery-1.jpg' %}" width="100%" class="small-img">
-                </div>
-                <div class="small-img-col">
-                    <img src="{% static 'images/gallery-2.jpg' %}" width="100%" class="small-img">
-                </div>
-                <div class="small-img-col">
-                    <img src="{% static 'images/gallery-3.jpg' %}" width="100%" class="small-img">
-                </div>
-                <div class="small-img-col">
-                    <img src="{% static 'images/gallery-4.jpg' %}" width="100%" class="small-img"> 
-                </div>
-            </div> {% endcomment %}
-
         </div>
         <div class="col-2">
             <p>{{ product.title }}</p>
@@ -39,6 +23,10 @@
                 </select>
                 <input type="hidden" value="{{ product.id }}" name="product.id">
                 <input type="number" name="quantity" value="1">
+                <!-- <input type="hidden" value="{{ product.quantity }}" name="product.quantity"> -->
+                <!-- <input type="hidden" value="{{ product.image.url }}" name="product.image">
+                <input type="hidden" value="{{ product.title }}" name="product.title">
+                <input type="hidden" value="{{ product.price }}" name="product.price"> -->
                 <button type="submit" class="btn">Add To Cart</button>
             </form>
             

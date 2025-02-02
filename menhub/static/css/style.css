@@ -256,7 +256,7 @@ ul{
 /* All Products */
 .row-2{
     justify-content: space-between;
-    margin: 100px auto 50px;
+    margin: 9px auto 0px;
 }
 select{
     border: 1px solid #ff523b;
