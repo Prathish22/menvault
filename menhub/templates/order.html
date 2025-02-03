@@ -1,13 +1,13 @@
 {% extends 'blank_layout.html' %}
 
- {% block content %}
- {% if messages %}
- <div class="message_popup"> 
-     {% for message in messages %} 
-         <li class="{{ message.tags }}">{{ message }}</li> 
-     {% endfor %}
- </div>
- {% else %} 
- {% include 'order_info.html'%}
- {% endif %} 
- {% endblock content %}
+{% block content %}
+{% if messages %}
+<div class="message_popup">
+    {% for message in messages %}
+    <li class="{{ message.tags }}">{{ message }}</li>
+    {% endfor %}
+</div>
+{% else %}
+{% include 'order_info.html'%}
+{% endif %} 
+{% endblock content %}

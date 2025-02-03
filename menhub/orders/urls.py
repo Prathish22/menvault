@@ -9,5 +9,6 @@ urlpatterns = [
     path('remove_item/<pk>',views.remove_item,name='remove_item'),
     path('checkout',views.checkout,name='checkout'),
     path('orders',views.show_orders,name='orders'),
+    # path('view_orders',views.view_orders,name="view_orders")
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

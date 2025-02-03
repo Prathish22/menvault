@@ -1,8 +1,5 @@
-
 <div class="small-container cart-page">
-  
     {% if orders %}
-
     <table>
         <tbody>
             <tr>
@@ -10,18 +7,17 @@
                 <th>Date</th>
                 <th>Total price</th>
                 <th>Status</th>
-            </tr>
+           </tr>
             {% for order in orders %}
             <tr>
                 <td>{{order.id}}</td>
                 <td>{{order.created_at}}</td>
                 <td>{{order.total_price}}</td>
                 <td>{{order.order_status}}</td>
-            </tr>{% endfor %}
-
+            </tr>
+            {% endfor %}
         </tbody>
     </table>
-    {% else %}
-    <p>No Orders</p>
+    {% else %}  <p>No Orders</p>
     {% endif %}
 </div>
